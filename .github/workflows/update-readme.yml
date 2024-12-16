@@ -25,11 +25,14 @@ jobs:
       run: |
         # Extract the ISO 8601 timestamp
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
-    
-        time_left_formatted=$(date -d "$(echo $time_remaining | sed 's/T/ /;s/+.*//')" "+%B %d, %Y")
-    
+
+        # Use date directly to parse the ISO 8601 format
+        time_left_formatted=$(date -d "$time_remaining" "+%B %d, %Y")
+
+        # Extract and format the top 5 news items
         top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("- [\(.headline): \(.source)](\(.link))") | join("\n")' clock_data.json)
-    
+
+        # Replace the time and news sections in README.md
         sed -i "/<!-- clock-time -->/,/<!-- \/clock-time -->/c\<!-- clock-time -->\nTime Left to Limit Global Warming: $time_left_formatted\n<!-- /clock-time -->" profile/README.md
         sed -i "/<!-- clock-news -->/,/<!-- \/clock-news -->/c\<!-- clock-news -->\n$top_news\n<!-- /clock-news -->" profile/README.md
 
