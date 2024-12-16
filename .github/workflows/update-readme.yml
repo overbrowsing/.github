@@ -32,7 +32,7 @@ jobs:
         days=$(((time_diff % 2592000) / 86400))
         time_left_formatted="${years} years, ${months} months, ${days} days"
 
-        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("- [\(.headline): \(.source)](\(.link))") | join("\n")' clock_data.json)
+        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("- [\(.headline) • \(.source)](\(.link))") | join("\n")' clock_data.json)
 
         awk -v time="$time_left_formatted" -v news="$top_news" '
           BEGIN { in_clock_time = 0; in_clock_news = 0 }
