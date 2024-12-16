@@ -5,9 +5,9 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Runs at midnight every day
+    - cron: '0 0 * * *'
 
-permissions: write-all  # Ensure the necessary permissions to push to the repo
+permissions: write-all
 
 jobs:
   update-readme:
@@ -23,43 +23,18 @@ jobs:
 
     - name: Extract data and update README
       run: |
-        carbon_deadline_timestamp=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
-        current_date=$(date +%s)
-        carbon_deadline_seconds=$(date -d $carbon_deadline_timestamp +%s)
-        time_remaining_seconds=$((carbon_deadline_seconds - current_date))
+        time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
+        time_left_formatted=$(date -d $time_remaining "+%B %d, %Y")
 
-        years=$((time_remaining_seconds / 31556952))
-        months=$(((time_remaining_seconds % 31556952) / 2629746))
-        days=$(((time_remaining_seconds % 2629746) / 86400))
-        time_remaining_formatted="${years} years, ${months} months, ${days} days"
+        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("* [\(.headline): \(.source)](\(.link))") | join("\n")' clock_data.json)
 
-        renewables_percentage=$(jq -r '.data.modules.renewables_1.initial' clock_data.json)
-
-        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("* [\(.headline)](\(.link)): \(.source)") | join("\n")' clock_data.json)
-
-        escaped_time_remaining=$(echo "$time_remaining_formatted" | sed 's/[&/\]/\\&/g')
-        escaped_renewables_percentage=$(echo "$renewables_percentage" | sed 's/[&/\]/\\&/g')
+        escaped_time_left=$(echo "$time_left_formatted" | sed 's/[&/\]/\\&/g')
         escaped_top_news=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
 
-        # Escape newlines in the news content for proper formatting
         escaped_top_news=$(echo "$escaped_top_news" | sed ':a;N;$!ba;s/\n/\\n/g')
 
-        # Remove old content
-        sed -i '/<!-- climate clock time start -->/,+1d' profile/README.md
-        sed -i '/<!-- renewable energy percentage start -->/,+1d' profile/README.md
-        sed -i '/<!-- renewable energy percentage end -->/,+1d' profile/README.md
-        sed -i '/<!-- climate clock news start -->/,+1d' profile/README.md
-        sed -i '/<!-- climate clock news end -->/,+1d' profile/README.md
-
-        # Insert new content
-        sed -i "/<!-- climate clock time start -->/a\
-Time Left to Limit Global Warming: $escaped_time_remaining" profile/README.md
-
-        sed -i "/<!-- renewable energy percentage start -->/a\
-Renewable Energy Share: $escaped_renewables_percentage%" profile/README.md
-
-        sed -i "/<!-- climate clock news start -->/a\
-$escaped_top_news" profile/README.md
+        sed -i '/<!-- climate clock time start -->/,/<!-- climate clock time end -->/c\<!-- climate clock time start -->\nTime Left to Limit Global Warming: '$escaped_time_left'\n<!-- climate clock time end -->' profile/README.md
+        sed -i '/<!-- climate clock news start -->/,/<!-- climate clock news end -->/c\<!-- climate clock news start -->\n'$escaped_top_news'\n<!-- climate clock news end -->' profile/README.md
 
     - name: Commit and push changes
       uses: EndBug/add-and-commit@v7
