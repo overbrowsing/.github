@@ -3,10 +3,10 @@ name: Update README with Climate Clock and News
 on:
   push:
     branches:
-      - main
+      - main  # Trigger on commits to the 'main' branch (adjust if needed)
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *' # Run once a day at midnight UTC
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   update-readme:
@@ -30,9 +30,17 @@ jobs:
         # Extracting top 5 climate news
         top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("• \(.headline) - \(.source) (\(.link))") | join("\n")' clock_data.json)
 
-        # Update README.md
-        sed -i "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $time_left_formatted|" profile/README.md
-        sed -i "s|<!-- CLIMATE_NEWS_TOP_5 -->|$top_news|" profile/README.md
+        # Print to check if variables are correctly populated
+        echo "Time remaining: $time_left_formatted"
+        echo "Top news: $top_news"
+
+        # Escape slashes in variables and substitute in README.md
+        escaped_time_left=$(echo "$time_left_formatted" | sed 's|/|\\/|g')
+        escaped_top_news=$(echo "$top_news" | sed 's|/|\\/|g')
+
+        # Update README.md using escaped values
+        sed -i "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $escaped_time_left|" profile/README.md
+        sed -i "s|<!-- CLIMATE_NEWS_TOP_5 -->|$escaped_top_news|" profile/README.md
 
         # Set outputs for the commit message or any other values you need for subsequent steps
         echo "time_left=$time_left_formatted" >> $GITHUB_OUTPUT
