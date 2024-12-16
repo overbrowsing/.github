@@ -7,7 +7,7 @@
 ---
 
 - 🌱 [Overbrowsing Website](https://overbrowsing.com)  
-Dive deeper into our research and learn about our ongoing projects, goals, and vision for a more sustainable web.
+Dive deeper into our research and learn about our ongoing projects, goals, and vision for a more sustainable web
 
 - 📚 [Overbrowsing Library](https://overbrowsing.com/resources/library)  
 A curated collection of resources on sustainable web design, development, and other relevant topics. Knowledge at your fingertips.
