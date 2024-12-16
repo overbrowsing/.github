@@ -1,4 +1,4 @@
-# Overbrowsing Research Group
+# Overbrowsing
 
 Overbrowsing is an applied research group dedicated to advancing sustainable web design practices. Established as part of doctoral research at the Department of [Design Informatics](https://www.designinformatics.org) at the University of Edinburgh, we blend inquiry and action to promote resource optimisation, ethical design, and strategies that balance technology’s potential with environmental stewardship.
 
