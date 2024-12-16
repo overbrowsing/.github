@@ -26,8 +26,18 @@ jobs:
         # Extract the ISO 8601 timestamp
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
 
-        # Parse ISO 8601 format directly with `date`
-        time_left_formatted=$(date -d "$time_remaining" "+%B %d, %Y")
+        # Convert to Unix timestamp and calculate the difference
+        current_time=$(date +%s)
+        deadline_time=$(date -d "$time_remaining" +%s)
+        time_diff=$((deadline_time - current_time))
+
+        # Calculate years, months, and days
+        years=$((time_diff / 31536000))
+        months=$(((time_diff % 31536000) / 2592000))
+        days=$(((time_diff % 2592000) / 86400))
+
+        # Format time remaining
+        time_left_formatted="${years} years, ${months} months, ${days} days"
 
         # Extract and format the top 5 news items
         top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("- [\(.headline): \(.source)](\(.link))") | join("\n")' clock_data.json)
