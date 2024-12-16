@@ -26,14 +26,15 @@ jobs:
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
         time_left_formatted=$(date -d $time_remaining "+%B %d, %Y")
 
-        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("[\(.headline)](\(.link))") | join("\n")' clock_data.json)
-        
+        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("* [\(.headline)]: \(.source)(\(.link))") | join("\n")' clock_data.json)
+
         escaped_time_left=$(echo "$time_left_formatted" | sed 's/[&/\]/\\&/g')
         escaped_top_news=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
+
         escaped_top_news=$(echo "$escaped_top_news" | sed ':a;N;$!ba;s/\n/\\n/g')
 
-        sed -i "/<!-- climate clock time start -->/c\<!-- climate clock time start -->\nTime Left to Limit Global Warming: $escaped_time_left\n<!-- climate clock time end -->" profile/README.md
-        sed -i "/<!-- climate clock news start -->/c\<!-- climate clock news start -->\n$escaped_top_news\n<!-- climate clock news end -->" profile/README.md
+        sed -i "/<!-- climate clock time start -->/c\<!-- climate clock time start -->\nTime Left to Limit Global Warming: $escaped_time_left\n" profile/README.md
+        sed -i "/<!-- climate clock news start -->/c\<!-- climate clock news start -->\n$escaped_top_news\n" profile/README.md
 
     - name: Commit and push changes
       uses: EndBug/add-and-commit@v7
