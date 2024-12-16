@@ -1,12 +1,9 @@
 name: Update README with Climate Clock and News
 
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *' # Run once a day at midnight UTC
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   update-readme:
@@ -16,11 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Install jq (if not already installed)
-      run: |
-        sudo apt-get update
-        sudo apt-get install jq
-
     - name: Fetch Climate Clock data
       run: |
         curl -s https://api.climateclock.world/v2/widget/clock.json > clock_data.json
@@ -29,23 +21,25 @@ jobs:
       run: |
         # Extracting Time Left to 1.5°C and the Top 5 News
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
-        
-        # Convert timestamp to a Unix timestamp format (seconds since 1970-01-01)
-        time_remaining_unix=$(date -d "$time_remaining" +%s)
-        
-        # Convert to readable date format
-        time_left_formatted=$(date -d @$time_remaining_unix "+%B %d, %Y")
-        
+        # Formatting time left
+        time_left_formatted=$(date -d $time_remaining "+%B %d, %Y")
+
         # Extracting top 5 climate news
         top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("• \(.headline) - \(.source) (\(.link))") | join("\n")' clock_data.json)
 
-        top_news_escaped=$(echo "$top_news" | sed 's/[&/\]/\\&/g' | sed ':a;N;$!ba;s/\n/\\n/g')
-        
+        # Update README.md
         sed -i "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $time_left_formatted|" profile/README.md
-        sed -i "s|<!-- CLIMATE_NEWS_TOP_5 -->|$top_news_escaped|" profile/README.md
+        sed -i "s|<!-- CLIMATE_NEWS_TOP_5 -->|$top_news|" profile/README.md
+
+        # Set outputs for the commit message or any other values you need for subsequent steps
+        echo "time_left=$time_left_formatted" >> $GITHUB_OUTPUT
+        echo "top_news=$top_news" >> $GITHUB_OUTPUT
 
     - name: Commit and push changes
       uses: EndBug/add-and-commit@v7
       with:
         message: "Update README with latest Climate Clock data and top news"
         add: "profile/README.md"
+        author_name: "GitHub Actions"
+        author_email: "github-actions@github.com"
+        token: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub Actions token
