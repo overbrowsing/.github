@@ -17,7 +17,7 @@ Overbrowsing is an innovative research group dedicated to exploring and advancin
 ## Climate Clock
 Time left to limit global warming to 1.5°C
 <!-- clock-time -->
-Time Left to Limit Global Warming: July 22, 2029
+Time Left to Limit Global Warming: 4 years, 7 months, 28 days
 <!-- /clock-time -->
 
 ## Climate News
