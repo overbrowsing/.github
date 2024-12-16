@@ -23,13 +23,14 @@ jobs:
 
     - name: Extract data and update README
       run: |
-        # Get the time remaining and news data
+        # Extract the ISO 8601 timestamp
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
-        time_left_formatted=$(date -d @$time_remaining "+%B %d, %Y")
-        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("- [\(.headline)](\(.link))") | join("\n")' clock_data.json)
-
-        # Replace the content in README
-        sed -i "/<!-- clock-time -->/,/<!-- \/clock-time -->/c\<!-- clock-time -->\n$time_left_formatted\n<!-- /clock-time -->" profile/README.md
+    
+        time_left_formatted=$(date -d "$(echo $time_remaining | sed 's/T/ /;s/+.*//')" "+%B %d, %Y")
+    
+        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("- [\(.headline): \(.source)](\(.link))") | join("\n")' clock_data.json)
+    
+        sed -i "/<!-- clock-time -->/,/<!-- \/clock-time -->/c\<!-- clock-time -->\nTime Left to Limit Global Warming: $time_left_formatted\n<!-- /clock-time -->" profile/README.md
         sed -i "/<!-- clock-news -->/,/<!-- \/clock-news -->/c\<!-- clock-news -->\n$top_news\n<!-- /clock-news -->" profile/README.md
 
     - name: Commit and push changes
