@@ -2,7 +2,7 @@
 
 # Overbrowsing Research Group
 
-**Overbrowsing** is an innovative research group dedicated to exploring and advancing sustainable web design. As part of doctoral research at the [Department of Design Informatics](https://www.designinformatics.org) at the University of Edinburgh, we're committed to shaping a greener digital future.
+Overbrowsing is an innovative research group dedicated to exploring and advancing sustainable web design. As part of doctoral research at the [Department of Design Informatics](https://www.designinformatics.org) at the University of Edinburgh, we're committed to shaping a greener digital future.
 
 ---
 
