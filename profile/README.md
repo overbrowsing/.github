@@ -10,7 +10,7 @@
 Dive deeper into our research and learn about our ongoing projects, goals, and vision for a more sustainable web
 
 - 📚 [Overbrowsing Library](https://overbrowsing.com/resources/library)  
-A curated collection of resources on sustainable web design, development, and other relevant topics. Knowledge at your fingertips.
+A curated collection of resources on sustainable web design, development, and other relevant topics. Knowledge at your fingertips
 
 - 💬 [Join the Discussion](https://github.com/orgs/overbrowsing/discussions)  
 Engage with us! Share insights, ask questions, and help shape the future of sustainable web design.
