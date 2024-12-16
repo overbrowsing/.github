@@ -36,8 +36,8 @@ jobs:
     
         top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("• \(.headline) - \(.source) (\(.link))") | join("\n")' clock_data.json)
 
-        sed -i "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $time_left_formatted|" README.md
-        sed -i "s|<!-- CLIMATE_NEWS_TOP_5 -->|$top_news|" README.md
+        sed -i "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $time_left_formatted|" profile/README.md
+        sed -i "s|<!-- CLIMATE_NEWS_TOP_5 -->|$top_news|" profile/README.md
 
     - name: Commit and push changes
       uses: EndBug/add-and-commit@v7
