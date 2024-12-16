@@ -12,6 +12,7 @@ Time left to limit global warming to 1.5°C: 4 years, 7 months, 28 days
 <!-- /clock-time -->
 
 ## Climate News
+Stories from around the globe, highlighting the ongoing challenges and solutions in the fight to protect the planet.
 <!-- clock-news -->
 - [China seeks feedback on draft guidelines to measure steel sector emissions: Reuters](https://www.reuters.com/world/china/china-solicits-public-feedback-guidelines-steel-sector-greenhouse-gas-emissions-2024-12-06/ )
 - [World Bank ventures into debt swaps with Ivory Coast education deal: Reuters](https://www.reuters.com/world/africa/world-bank-ventures-into-debt-swaps-with-ivory-coast-education-deal-2024-12-05/ )
