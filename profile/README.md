@@ -6,8 +6,6 @@ Overbrowsing is an applied research group dedicated to advancing sustainable web
 - 📗 [**Overbrowsing Library**](https://overbrowsing.com/resources/library): Explore resources on sustainable web design and development.
 - 💬 [**Discussions**](https://github.com/orgs/overbrowsing/discussions): Join the conversation, share insights, and help shape the future of sustainable web design.
 
----
-
 ## Climate Clock
 <!-- clock-time -->
 Time left to limit global warming to 1.5°C: 4 years, 7 months, 28 days
