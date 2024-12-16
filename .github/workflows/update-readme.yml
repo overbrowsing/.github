@@ -38,11 +38,9 @@ jobs:
         
         # Extracting top 5 climate news
         top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("• \(.headline) - \(.source) (\(.link))") | join("\n")' clock_data.json)
+
+        top_news_escaped=$(echo "$top_news" | sed 's/[&/\]/\\&/g' | sed ':a;N;$!ba;s/\n/\\n/g')
         
-        # Escape special characters in the top_news for sed
-        top_news_escaped=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
-    
-        # Update README.md in /profile folder
         sed -i "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $time_left_formatted|" profile/README.md
         sed -i "s|<!-- CLIMATE_NEWS_TOP_5 -->|$top_news_escaped|" profile/README.md
 
