@@ -17,12 +17,13 @@ Engage with us! Share insights, ask questions, and help shape the future of sust
 
 ---
 
-## Climate Clock
+## Climate Clock Data
+Time Left to Limit Global Warming:
+<!-- clock-time -->
+[PLACEHOLDER]
+<!-- /clock-time -->
 
-<!-- climate clock time start -->
-<!-- climate clock time end -->
-
-## Top 5 Climate News Stories
-
-<!-- climate clock news start -->
-<!-- climate clock news end -->
+## Top News
+<!-- clock-news -->
+[PLACEHOLDER]
+<!-- /clock-news -->
