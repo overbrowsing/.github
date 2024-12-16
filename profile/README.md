@@ -20,6 +20,8 @@ Engage with us! Share insights, ask questions, and help shape the future of sust
 ## Climate Clock
 
 <!-- climate clock time start -->
+Time Left to Limit Global Warming: 4 years, 7 months, 4 days
+<!-- climate clock time end -->
 Time Left to Limit Global Warming: July 22, 2029
 
 <!-- climate clock time end -->
@@ -27,6 +29,12 @@ Time Left to Limit Global Warming: July 22, 2029
 ## Top 5 Climate News Stories
 
 <!-- climate clock news start -->
+* [China seeks feedback on draft guidelines to measure steel sector emissions](https://www.reuters.com/world/china/china-solicits-public-feedback-guidelines-steel-sector-greenhouse-gas-emissions-2024-12-06/ ): Reuters
+* [World Bank ventures into debt swaps with Ivory Coast education deal](https://www.reuters.com/world/africa/world-bank-ventures-into-debt-swaps-with-ivory-coast-education-deal-2024-12-05/ ): Reuters
+* [Greenland’s peregrine falcons are a story of resilience in a changing Arctic](https://www.dailyclimate.org/greenlands-peregrine-falcons-resilience-2670306087.html   ): The Daily Climate
+* [Federal funding injects $50M into Great Salt Lake recovery](https://www.theguardian.com/environment/2024/dec/04/carrboro-north-carolina-duke-energy-lawsuit ): The Daily Climate
+* [Small North Carolina town sues Duke Energy in historic climate action](https://www.theguardian.com/environment/2024/dec/04/carrboro-north-carolina-duke-energy-lawsuit ): The Guardian
+<!-- climate clock news end -->
 * [China seeks feedback on draft guidelines to measure steel sector emissions: Reuters](https://www.reuters.com/world/china/china-solicits-public-feedback-guidelines-steel-sector-greenhouse-gas-emissions-2024-12-06/ )
 * [World Bank ventures into debt swaps with Ivory Coast education deal: Reuters](https://www.reuters.com/world/africa/world-bank-ventures-into-debt-swaps-with-ivory-coast-education-deal-2024-12-05/ )
 * [Greenland’s peregrine falcons are a story of resilience in a changing Arctic: The Daily Climate](https://www.dailyclimate.org/greenlands-peregrine-falcons-resilience-2670306087.html   )
