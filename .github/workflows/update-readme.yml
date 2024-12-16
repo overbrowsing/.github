@@ -29,15 +29,15 @@ jobs:
       run: |
         # Extracting Time Left to 1.5°C and the Top 5 News
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
-        # Formatting time left
-        time_left_formatted=$(date -d @$time_remaining "+%B %d, %Y")
-
-        # Extracting top 5 climate news
+    
+        time_remaining_unix=$(date -d "$time_remaining" +%s)
+    
+        time_left_formatted=$(date -d @$time_remaining_unix "+%B %d, %Y")
+    
         top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("• \(.headline) - \(.source) (\(.link))") | join("\n")' clock_data.json)
 
-        # Update profile/README.md
-        sed -i "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $time_left_formatted|" profile/README.md
-        sed -i "s|<!-- CLIMATE_NEWS_TOP_5 -->|$top_news|" profile/README.md
+        sed -i "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $time_left_formatted|" README.md
+        sed -i "s|<!-- CLIMATE_NEWS_TOP_5 -->|$top_news|" README.md
 
     - name: Commit and push changes
       uses: EndBug/add-and-commit@v7
