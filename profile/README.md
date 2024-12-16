@@ -2,6 +2,8 @@
 
 Overbrowsing is an applied research group dedicated to advancing sustainable web design practices. Established as part of doctoral research at the Department of [Design Informatics](https://www.designinformatics.org) at the University of Edinburgh, we blend inquiry and action to promote resource optimisation, ethical design, and strategies that balance technology’s potential with environmental stewardship.
 
+The term ‘browsing’ shares its origins with the behaviour of herbivores grazing, and just as ‘overbrowsing’ describes excessive grazing that harms ecosystems, it also serves as a metaphor for the unsustainable excesses of web usage. Overbrowsing occurs when herbivores graze excessively, exerting pressure on the environment, and this word, which has a common origin with internet browsing, aligns with the initiative’s core mission.
+
 - 🌍 [**Overbrowsing Website**](https://overbrowsing.com): Learn about our research, projects, and mission for a sustainable web.
 - 📗 [**Overbrowsing Library**](https://overbrowsing.com/resources/library): Explore resources on sustainable web design and development.
 - 💬 [**Discussions**](https://github.com/orgs/overbrowsing/discussions): Join the conversation, share insights, and help shape the future of sustainable web design.
