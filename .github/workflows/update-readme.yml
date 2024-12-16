@@ -1,68 +1,58 @@
-name: Update README with Climate Clock
+name: Update Climate Data
 
 on:
   push:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Runs at midnight every day
-
-permissions: write-all  # Ensure the necessary permissions to push to the repo
+    - cron: '0 0 * * *'  # Runs once a day
 
 jobs:
-  update-readme:
+  update-climate-data:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Fetch Climate Clock data
+    - name: Fetch Climate Data
+      id: fetch_data
       run: |
-        curl -s https://api.climateclock.world/v2/widget/clock.json > clock_data.json
+        # Fetch climate data using curl or another method
+        # For this example, assume you get the data from a JSON API
+        climate_clock_data=$(curl -s "https://api.climateclock.world/api/v1/climate-data")
+        renewables_percent=$(curl -s "https://api.climateclock.world/api/v1/renewables-percent")
+        
+        # Calculate years, months, and days left for climate deadline
+        # This is a simplified approach, modify it according to the API data
+        deadline_timestamp="2029-07-22T16:00:00+00:00"
+        current_timestamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+        deadline_diff=$(( $(date -d "$deadline_timestamp" +%s) - $(date -d "$current_timestamp" +%s) ))
+        years_left=$(( deadline_diff / 31536000 ))  # 60 seconds * 60 minutes * 24 hours * 365 days
+        months_left=$(( (deadline_diff % 31536000) / 2592000 ))  # 60 seconds * 60 minutes * 24 hours * 30 days
+        days_left=$(( (deadline_diff % 2592000) / 86400 ))  # 60 seconds * 60 minutes * 24 hours
 
-    - name: Extract data and update README
+        # Save the values to be used later in the workflow
+        echo "years_left=$years_left" >> $GITHUB_ENV
+        echo "months_left=$months_left" >> $GITHUB_ENV
+        echo "days_left=$days_left" >> $GITHUB_ENV
+        echo "renewables_percent=$renewables_percent" >> $GITHUB_ENV
+
+    - name: Update README with new data
       run: |
-        # Extract the carbon deadline timestamp
-        carbon_deadline_timestamp=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
-        current_date=$(date +%s)
-        carbon_deadline_seconds=$(date -d $carbon_deadline_timestamp +%s)
-        time_remaining_seconds=$((carbon_deadline_seconds - current_date))
+        # Read the current README file
+        readme_file="README.md"
+        climate_clock_content="Time Left to Limit Global Warming: ${{ env.years_left }} years, ${{ env.months_left }} months, ${{ env.days_left }} days"
+        renewables_content="Global Renewables Percentage: ${{ env.renewables_percent }}%"
 
-        # Convert seconds to years, months, and days
-        years=$((time_remaining_seconds / 31556952))
-        months=$(((time_remaining_seconds % 31556952) / 2629746))
-        days=$(((time_remaining_seconds % 2629746) / 86400))
-        time_remaining_formatted="${years} years, ${months} months, ${days} days"
-
-        # Extract renewable energy percentage
-        renewables_percentage=$(jq -r '.data.modules.renewables_1.initial' clock_data.json)
-
-        # Format the top news as Markdown bullets: * [TITLE](URL): Source
-        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("* [\(.headline)](\(.link)): \(.source)") | join("\n")' clock_data.json)
-
-        # Escape special characters in time and news for insertion into the README
-        escaped_time_remaining=$(echo "$time_remaining_formatted" | sed 's/[&/\]/\\&/g')
-        escaped_renewables_percentage=$(echo "$renewables_percentage" | sed 's/[&/\]/\\&/g')
-        escaped_top_news=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
-
-        # Escape newlines for proper formatting in the README
-        escaped_top_news=$(echo "$escaped_top_news" | sed ':a;N;$!ba;s/\n/\\n/g')
-
-        # Update the README with the time left to limit global warming
-        sed -i "/<!-- climate clock time start -->/c\<!-- climate clock time start -->\nTime Left to Limit Global Warming: $escaped_time_remaining\n<!-- climate clock time end -->" profile/README.md
-
-        # Update the README with the percentage of renewable energy
-        sed -i "/<!-- renewable energy percentage start -->/c\<!-- renewable energy percentage start -->\nRenewable Energy Share: $escaped_renewables_percentage%\n<!-- renewable energy percentage end -->" profile/README.md
-
-        # Update the README with the top news
-        sed -i "/<!-- climate clock news start -->/c\<!-- climate clock news start -->\n$escaped_top_news\n<!-- climate clock news end -->" profile/README.md
+        # Replace old content (if any) with the new climate clock and renewables data
+        sed -i "s|<!-- climate clock time start -->.*<!-- climate clock time end -->|<!-- climate clock time start -->$climate_clock_content<!-- climate clock time end -->|" $readme_file
+        sed -i "s|<!-- renewables percentage start -->.*<!-- renewables percentage end -->|<!-- renewables percentage start -->$renewables_content<!-- renewables percentage end -->|" $readme_file
 
     - name: Commit and push changes
-      uses: EndBug/add-and-commit@v7
-      with:
-        message: "Update README with latest Climate Clock data and top news"
-        add: "profile/README.md"
-        author_name: "GitHub Actions"
-        author_email: "github-actions@github.com"
-        push: true
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add README.md
+        git commit -m "Update climate data"
+        git push
