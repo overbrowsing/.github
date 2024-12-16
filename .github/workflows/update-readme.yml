@@ -28,7 +28,7 @@ jobs:
         time_left_formatted=$(date -d $time_remaining "+%B %d, %Y")
 
         # Format the top news as Markdown links
-        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("• [\(.headline)](\(.link))") | join("\n")' clock_data.json)
+        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("[\(.headline)](\(.link))") | join("\n")' clock_data.json)
 
         # Escape special characters in time and news
         escaped_time_left=$(echo "$time_left_formatted" | sed 's/[&/\]/\\&/g')
