@@ -6,7 +6,7 @@ The term ‘browsing’ originates from herbivores grazing, Similarly, ‘[overb
 
 - 🌍 [**Overbrowsing Website**](https://overbrowsing.com): Learn about our research, projects, and mission for a sustainable web.
 - 📗 [**Overbrowsing Library**](https://overbrowsing.com/resources/library): Explore resources on sustainable web design and development.
-- 💬 [**Discussions**](https://github.com/orgs/overbrowsing/discussions): Join the conversation, share insights, and help shape the future of sustainable web design.
+- 💬 [**Discussions**](https://github.com/orgs/overbrowsing/discussions): Join the conversation and help shape the future of sustainable web design.
 
 ---
 
