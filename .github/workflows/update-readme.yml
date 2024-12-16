@@ -23,12 +23,21 @@ jobs:
 
     - name: Extract data and update README
       run: |
+        # Extract the remaining time to limit global warming
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
         time_left_formatted=$(date -d $time_remaining "+%B %d, %Y")
-        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("[\(.headline)](\(.link))") | join("\n")' clock_data.json)
+
+        # Format the top news as Markdown links
+        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("• [\(.headline)](\(.link))") | join("\n")' clock_data.json)
+
+        # Escape special characters in time and news
         escaped_time_left=$(echo "$time_left_formatted" | sed 's/[&/\]/\\&/g')
         escaped_top_news=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
+
+        # Escape newlines for insertion into the README
         escaped_top_news=$(echo "$escaped_top_news" | sed ':a;N;$!ba;s/\n/\\n/g')
+
+        # Replace placeholders in the README with the extracted data
         perl -pi -e "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $escaped_time_left|" profile/README.md
         perl -pi -e "s|<!-- CLIMATE_NEWS_TOP_5 -->|$escaped_top_news|" profile/README.md
 
