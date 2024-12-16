@@ -26,7 +26,7 @@ jobs:
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
         time_left_formatted=$(date -d $time_remaining "+%B %d, %Y")
 
-        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("* [\(.headline)]: \(.source)(\(.link))") | join("\n")' clock_data.json)
+        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("* [\(.headline): \(.source)](\(.link))") | join("\n")' clock_data.json)
 
         escaped_time_left=$(echo "$time_left_formatted" | sed 's/[&/\]/\\&/g')
         escaped_top_news=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
