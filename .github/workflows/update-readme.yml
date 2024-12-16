@@ -1,12 +1,13 @@
-name: Update README with Climate Clock and News
+name: Update README with Climate Clock
 
 on:
   push:
     branches:
-      - main  # Trigger on commits to the 'main' branch (adjust if needed)
+      - main
   schedule:
-    - cron: '0 0 * * *' # Run once a day at midnight UTC
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 0 * * *'  # Runs at midnight every day
+
+permissions: write-all  # Ensure the necessary permissions to push to the repo
 
 jobs:
   update-readme:
@@ -22,26 +23,12 @@ jobs:
 
     - name: Extract data and update README
       run: |
-        # Extracting Time Left to 1.5°C and the Top 5 News
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
-        # Formatting time left
         time_left_formatted=$(date -d $time_remaining "+%B %d, %Y")
-
-        # Extracting top 5 climate news
         top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("• \(.headline) - \(.source) (\(.link))") | join("\n")' clock_data.json)
-
-        # Print to check if variables are correctly populated
-        echo "Time remaining: $time_left_formatted"
-        echo "Top news: $top_news"
-
-        # Escape special characters in time_left and top_news for GitHub outputs
         escaped_time_left=$(echo "$time_left_formatted" | sed 's/[&/\]/\\&/g')
         escaped_top_news=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
-
-        # Escape other special characters like newline
         escaped_top_news=$(echo "$escaped_top_news" | sed ':a;N;$!ba;s/\n/\\n/g')
-
-        # Update README.md using escaped values
         perl -pi -e "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $escaped_time_left|" profile/README.md
         perl -pi -e "s|<!-- CLIMATE_NEWS_TOP_5 -->|$escaped_top_news|" profile/README.md
 
@@ -52,4 +39,4 @@ jobs:
         add: "profile/README.md"
         author_name: "GitHub Actions"
         author_email: "github-actions@github.com"
-        push: true  # Allow pushing the changes
+        push: true
