@@ -5,9 +5,9 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *'  # Runs at midnight every day
 
-permissions: write-all
+permissions: write-all  # Ensure the necessary permissions to push to the repo
 
 jobs:
   update-readme:
@@ -23,18 +23,40 @@ jobs:
 
     - name: Extract data and update README
       run: |
-        time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
-        time_left_formatted=$(date -d $time_remaining "+%B %d, %Y")
+        # Extract the carbon deadline timestamp
+        carbon_deadline_timestamp=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
+        current_date=$(date +%s)
+        carbon_deadline_seconds=$(date -d $carbon_deadline_timestamp +%s)
+        time_remaining_seconds=$((carbon_deadline_seconds - current_date))
 
-        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("* [\(.headline): \(.source)](\(.link))") | join("\n")' clock_data.json)
+        # Convert seconds to years, months, and days
+        years=$((time_remaining_seconds / 31556952))
+        months=$(((time_remaining_seconds % 31556952) / 2629746))
+        days=$(((time_remaining_seconds % 2629746) / 86400))
+        time_remaining_formatted="${years} years, ${months} months, ${days} days"
 
-        escaped_time_left=$(echo "$time_left_formatted" | sed 's/[&/\]/\\&/g')
+        # Extract renewable energy percentage
+        renewables_percentage=$(jq -r '.data.modules.renewables_1.initial' clock_data.json)
+
+        # Format the top news as Markdown bullets: * [TITLE](URL): Source
+        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("* [\(.headline)](\(.link)): \(.source)") | join("\n")' clock_data.json)
+
+        # Escape special characters in time and news for insertion into the README
+        escaped_time_remaining=$(echo "$time_remaining_formatted" | sed 's/[&/\]/\\&/g')
+        escaped_renewables_percentage=$(echo "$renewables_percentage" | sed 's/[&/\]/\\&/g')
         escaped_top_news=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
 
+        # Escape newlines for proper formatting in the README
         escaped_top_news=$(echo "$escaped_top_news" | sed ':a;N;$!ba;s/\n/\\n/g')
 
-        sed -i "/<!-- climate clock time start -->/c\<!-- climate clock time start -->\nTime Left to Limit Global Warming: $escaped_time_left\n" profile/README.md
-        sed -i "/<!-- climate clock news start -->/c\<!-- climate clock news start -->\n$escaped_top_news\n" profile/README.md
+        # Update the README with the time left to limit global warming
+        sed -i "/<!-- climate clock time start -->/c\<!-- climate clock time start -->\nTime Left to Limit Global Warming: $escaped_time_remaining\n<!-- climate clock time end -->" profile/README.md
+
+        # Update the README with the percentage of renewable energy
+        sed -i "/<!-- renewable energy percentage start -->/c\<!-- renewable energy percentage start -->\nRenewable Energy Share: $escaped_renewables_percentage%\n<!-- renewable energy percentage end -->" profile/README.md
+
+        # Update the README with the top news
+        sed -i "/<!-- climate clock news start -->/c\<!-- climate clock news start -->\n$escaped_top_news\n<!-- climate clock news end -->" profile/README.md
 
     - name: Commit and push changes
       uses: EndBug/add-and-commit@v7
