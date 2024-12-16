@@ -34,11 +34,12 @@ jobs:
 
         # Safely replace the placeholders in README.md
         awk -v time="$time_left_formatted" -v news="$top_news" '
-          /<!-- clock-time -->/ { print $0; print "Time Left to Limit Global Warming: " time; next }
-          /<!-- \/clock-time -->/ { print $0; next }
-          /<!-- clock-news -->/ { print $0; print news; next }
-          /<!-- \/clock-news -->/ { print $0; next }
-          { print $0 }
+          BEGIN { in_clock_time = 0; in_clock_news = 0 }
+          /<!-- clock-time -->/ { print $0; print "Time Left to Limit Global Warming: " time; in_clock_time = 1; next }
+          /<!-- \/clock-time -->/ { print $0; in_clock_time = 0; next }
+          /<!-- clock-news -->/ { print $0; print news; in_clock_news = 1; next }
+          /<!-- \/clock-news -->/ { print $0; in_clock_news = 0; next }
+          !(in_clock_time || in_clock_news) { print $0 }
         ' profile/README.md > profile/README.tmp && mv profile/README.tmp profile/README.md
 
     - name: Commit and push changes
