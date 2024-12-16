@@ -19,12 +19,10 @@ Engage with us! Share insights, ask questions, and help shape the future of sust
 
 ## Climate Clock
 
-**Time Left to Limit Global Warming to 1.5°C**: Time Left to Limit Global Warming: July 22, 2029
+<!-- climate clock time start -->
+<!-- climate clock time end -->
 
 ## Top 5 Climate News Stories
 
-• China seeks feedback on draft guidelines to measure steel sector emissions - Reuters (https://www.reuters.com/world/china/china-solicits-public-feedback-guidelines-steel-sector-greenhouse-gas-emissions-2024-12-06/ )
-• World Bank ventures into debt swaps with Ivory Coast education deal - Reuters (https://www.reuters.com/world/africa/world-bank-ventures-into-debt-swaps-with-ivory-coast-education-deal-2024-12-05/ )
-• Greenland’s peregrine falcons are a story of resilience in a changing Arctic - The Daily Climate (https://www.dailyclimate.org/greenlands-peregrine-falcons-resilience-2670306087.html   )
-• Federal funding injects M into Great Salt Lake recovery - The Daily Climate (https://www.theguardian.com/environment/2024/dec/04/carrboro-north-carolina-duke-energy-lawsuit )
-• Small North Carolina town sues Duke Energy in historic climate action - The Guardian (https://www.theguardian.com/environment/2024/dec/04/carrboro-north-carolina-duke-energy-lawsuit )
+<!-- climate clock news start -->
+<!-- climate clock news end -->
