@@ -40,12 +40,14 @@ jobs:
 
     - name: Update README with new data
       run: |
-        # Read the current README file
+        # Define the markdown file path
         readme_file="README.md"
+        
+        # Read the current README content and replace the content dynamically
         climate_clock_content="Time Left to Limit Global Warming: ${{ env.years_left }} years, ${{ env.months_left }} months, ${{ env.days_left }} days"
         renewables_content="Global Renewables Percentage: ${{ env.renewables_percent }}%"
 
-        # Replace old content (if any) with the new climate clock and renewables data
+        # Replace the old content with the new data inside placeholders
         sed -i "s|<!-- climate clock time start -->.*<!-- climate clock time end -->|<!-- climate clock time start -->$climate_clock_content<!-- climate clock time end -->|" $readme_file
         sed -i "s|<!-- renewables percentage start -->.*<!-- renewables percentage end -->|<!-- renewables percentage start -->$renewables_content<!-- renewables percentage end -->|" $readme_file
 
