@@ -5,9 +5,9 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'
-    
-permissions: write-all
+    - cron: '0 0 * * *'  # Runs at midnight every day
+
+permissions: write-all  # Ensure the necessary permissions to push to the repo
 
 jobs:
   update-readme:
@@ -23,23 +23,14 @@ jobs:
 
     - name: Extract data and update README
       run: |
-        # Extract the remaining time to limit global warming
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
         time_left_formatted=$(date -d $time_remaining "+%B %d, %Y")
-
-        # Format the top news as Markdown links
-        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("[\(.headline)](\(.link))") | join("\n")' clock_data.json)
-
-        # Escape special characters in time and news for insertion into the README
+        top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("[\(.headline) - \(.source)](\(.link))") | join("\n")' clock_data.json)
         escaped_time_left=$(echo "$time_left_formatted" | sed 's/[&/\]/\\&/g')
         escaped_top_news=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
-
-        # Escape newlines for proper formatting in the README
         escaped_top_news=$(echo "$escaped_top_news" | sed ':a;N;$!ba;s/\n/\\n/g')
-
-        # Replace placeholders in the README with the extracted data
-        sed -i "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $escaped_time_left|" profile/README.md
-        sed -i "s|<!-- CLIMATE_NEWS_TOP_5 -->|$escaped_top_news|" profile/README.md
+        perl -pi -e "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $escaped_time_left|" profile/README.md
+        perl -pi -e "s|<!-- CLIMATE_NEWS_TOP_5 -->|$escaped_top_news|" profile/README.md
 
     - name: Commit and push changes
       uses: EndBug/add-and-commit@v7
