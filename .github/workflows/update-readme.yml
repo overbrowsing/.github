@@ -34,9 +34,9 @@ jobs:
         echo "Time remaining: $time_left_formatted"
         echo "Top news: $top_news"
 
-        # Escape slashes in variables and substitute in README.md
+        # Escape slashes and other special characters in the text
         escaped_time_left=$(echo "$time_left_formatted" | sed 's|/|\\/|g')
-        escaped_top_news=$(echo "$top_news" | sed 's|/|\\/|g')
+        escaped_top_news=$(echo "$top_news" | sed 's|&|\\&|g; s|/|\\/|g; s|(|\\(|g; s|)|\\)|g; s|\n|\\n|g')
 
         # Update README.md using escaped values
         sed -i "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $escaped_time_left|" profile/README.md
