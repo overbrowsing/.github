@@ -10,7 +10,7 @@ The term ‘browsing’ originates from herbivores grazing, Similarly, ‘[overb
 
 ---
 
-##Climate Clock
+## Climate Clock
 <!-- clock-time -->
 Time left to limit global warming to 1.5°C: 4 years, 7 months, 28 days
 <!-- /clock-time -->
