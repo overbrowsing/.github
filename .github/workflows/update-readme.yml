@@ -34,17 +34,20 @@ jobs:
         echo "Time remaining: $time_left_formatted"
         echo "Top news: $top_news"
 
-        # Use perl to escape and insert the values into README.md
-        escaped_time_left=$(echo "$time_left_formatted" | perl -pe 's/\//\\\//g')
-        escaped_top_news=$(echo "$top_news" | perl -pe 's/\//\\\//g; s/&/\\&/g; s/\n/\\n/g')
+        # Escape special characters in time_left and top_news for GitHub outputs
+        escaped_time_left=$(echo "$time_left_formatted" | sed 's/[&/\]/\\&/g')
+        escaped_top_news=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
+
+        # Escape other special characters like newline
+        escaped_top_news=$(echo "$escaped_top_news" | sed ':a;N;$!ba;s/\n/\\n/g')
 
         # Update README.md using escaped values
         perl -pi -e "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $escaped_time_left|" profile/README.md
         perl -pi -e "s|<!-- CLIMATE_NEWS_TOP_5 -->|$escaped_top_news|" profile/README.md
 
         # Set outputs for the commit message or any other values you need for subsequent steps
-        echo "time_left=$time_left_formatted" >> $GITHUB_OUTPUT
-        echo "top_news=$top_news" >> $GITHUB_OUTPUT
+        echo "time_left=$escaped_time_left" >> $GITHUB_OUTPUT
+        echo "top_news=$escaped_top_news" >> $GITHUB_OUTPUT
 
     - name: Commit and push changes
       uses: EndBug/add-and-commit@v7
