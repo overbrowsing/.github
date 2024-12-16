@@ -23,44 +23,41 @@ jobs:
 
     - name: Extract data and update README
       run: |
-        # Extract the carbon deadline timestamp
         carbon_deadline_timestamp=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
         current_date=$(date +%s)
         carbon_deadline_seconds=$(date -d $carbon_deadline_timestamp +%s)
         time_remaining_seconds=$((carbon_deadline_seconds - current_date))
 
-        # Convert seconds to years, months, and days
         years=$((time_remaining_seconds / 31556952))
         months=$(((time_remaining_seconds % 31556952) / 2629746))
         days=$(((time_remaining_seconds % 2629746) / 86400))
         time_remaining_formatted="${years} years, ${months} months, ${days} days"
 
-        # Extract renewable energy percentage
         renewables_percentage=$(jq -r '.data.modules.renewables_1.initial' clock_data.json)
 
-        # Format the top news as Markdown bullets: * [TITLE](URL): Source
         top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("* [\(.headline)](\(.link)): \(.source)") | join("\n")' clock_data.json)
 
-        # Escape special characters in time and news for insertion into the README
         escaped_time_remaining=$(echo "$time_remaining_formatted" | sed 's/[&/\]/\\&/g')
         escaped_renewables_percentage=$(echo "$renewables_percentage" | sed 's/[&/\]/\\&/g')
         escaped_top_news=$(echo "$top_news" | sed 's/[&/\]/\\&/g')
 
-        # Escape newlines for proper formatting in the README
+        # Escape newlines in the news content for proper formatting
         escaped_top_news=$(echo "$escaped_top_news" | sed ':a;N;$!ba;s/\n/\\n/g')
 
-        # Clear the existing content and update the README with the time left to limit global warming
-        sed -i -e '/<!-- climate clock time start -->/,+1d' -e "/<!-- climate clock time end -->/,+1d" profile/README.md
+        # Remove old content
+        sed -i '/<!-- climate clock time start -->/,+1d' profile/README.md
+        sed -i '/<!-- renewable energy percentage start -->/,+1d' profile/README.md
+        sed -i '/<!-- renewable energy percentage end -->/,+1d' profile/README.md
+        sed -i '/<!-- climate clock news start -->/,+1d' profile/README.md
+        sed -i '/<!-- climate clock news end -->/,+1d' profile/README.md
+
+        # Insert new content
         sed -i "/<!-- climate clock time start -->/a\
 Time Left to Limit Global Warming: $escaped_time_remaining" profile/README.md
 
-        # Clear the existing renewable energy content and update the README
-        sed -i -e '/<!-- renewable energy percentage start -->/,+1d' -e "/<!-- renewable energy percentage end -->/,+1d" profile/README.md
         sed -i "/<!-- renewable energy percentage start -->/a\
 Renewable Energy Share: $escaped_renewables_percentage%" profile/README.md
 
-        # Clear the existing top news content and update the README
-        sed -i -e '/<!-- climate clock news start -->/,+1d' -e "/<!-- climate clock news end -->/,+1d" profile/README.md
         sed -i "/<!-- climate clock news start -->/a\
 $escaped_top_news" profile/README.md
 
