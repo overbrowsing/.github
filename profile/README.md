@@ -6,24 +6,21 @@ Overbrowsing is an innovative research group dedicated to exploring and advancin
 
 ---
 
-- 🌱 [Overbrowsing Website](https://overbrowsing.com)  
-Dive deeper into our research and learn about our ongoing projects, goals, and vision for a more sustainable web
+- 🌱 [**Overbrowsing Website**](https://overbrowsing.com): Dive deeper into our research and learn about our ongoing projects, goals, and vision for a more sustainable web
 
-- 📚 [Overbrowsing Library](https://overbrowsing.com/resources/library)  
-A curated collection of resources on sustainable web design, development, and other relevant topics. Knowledge at your fingertips
+- 📚 [**Overbrowsing Library**](https://overbrowsing.com/resources/library): A curated collection of resources on sustainable web design, development, and other relevant topics. Knowledge at your fingertips
 
-- 💬 [Join the Discussion](https://github.com/orgs/overbrowsing/discussions)  
-Engage with us! Share insights, ask questions, and help shape the future of sustainable web design.
+- 💬 [**Join the Discussion**](https://github.com/orgs/overbrowsing/discussions): Engage with us! Share insights, ask questions, and help shape the future of sustainable web design.
 
 ---
 
-## Climate Clock Data
-Time Left to Limit Global Warming:
+## Climate Clock
+Time left to limit global warming to 1.5°C
 <!-- clock-time -->
 Time Left to Limit Global Warming: July 22, 2029
 <!-- /clock-time -->
 
-## Top News
+## Climate News
 <!-- clock-news -->
 - [China seeks feedback on draft guidelines to measure steel sector emissions: Reuters](https://www.reuters.com/world/china/china-solicits-public-feedback-guidelines-steel-sector-greenhouse-gas-emissions-2024-12-06/ )
 - [World Bank ventures into debt swaps with Ivory Coast education deal: Reuters](https://www.reuters.com/world/africa/world-bank-ventures-into-debt-swaps-with-ivory-coast-education-deal-2024-12-05/ )
