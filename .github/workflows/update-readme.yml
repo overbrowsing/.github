@@ -45,10 +45,6 @@ jobs:
         perl -pi -e "s|<!-- CLIMATE_CLOCK_TIME_REMAINING -->|Time Left to Limit Global Warming: $escaped_time_left|" profile/README.md
         perl -pi -e "s|<!-- CLIMATE_NEWS_TOP_5 -->|$escaped_top_news|" profile/README.md
 
-        # Set outputs for the commit message or any other values you need for subsequent steps
-        echo "time_left=$escaped_time_left" >> $GITHUB_OUTPUT
-        echo "top_news=$escaped_top_news" >> $GITHUB_OUTPUT
-
     - name: Commit and push changes
       uses: EndBug/add-and-commit@v7
       with:
@@ -56,4 +52,4 @@ jobs:
         add: "profile/README.md"
         author_name: "GitHub Actions"
         author_email: "github-actions@github.com"
-        token: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub Actions token
+        push: true  # Allow pushing the changes
