@@ -1,4 +1,4 @@
-name: Update README with Climate Clock
+name: Update README
 
 on:
   push:
@@ -21,31 +21,22 @@ jobs:
       run: |
         curl -s https://api.climateclock.world/v2/widget/clock.json > clock_data.json
 
-    - name: Extract data and update README
+    - name: Extract Climate Clock data and update README
       run: |
-        # Extract the ISO 8601 timestamp
         time_remaining=$(jq -r '.data.modules.carbon_deadline_1.timestamp' clock_data.json)
-
-        # Convert to Unix timestamp and calculate the difference
         current_time=$(date +%s)
         deadline_time=$(date -d "$time_remaining" +%s)
         time_diff=$((deadline_time - current_time))
-
-        # Calculate years, months, and days
         years=$((time_diff / 31536000))
         months=$(((time_diff % 31536000) / 2592000))
         days=$(((time_diff % 2592000) / 86400))
-
-        # Format time remaining
         time_left_formatted="${years} years, ${months} months, ${days} days"
 
-        # Extract and format the top 5 news items
         top_news=$(jq -r '.data.modules.newsfeed_1.newsfeed[0:5] | map("- [\(.headline): \(.source)](\(.link))") | join("\n")' clock_data.json)
 
-        # Safely replace the placeholders in README.md
         awk -v time="$time_left_formatted" -v news="$top_news" '
           BEGIN { in_clock_time = 0; in_clock_news = 0 }
-          /<!-- clock-time -->/ { print $0; print "Time Left to Limit Global Warming: " time; in_clock_time = 1; next }
+          /<!-- clock-time -->/ { print $0; print "Time left to limit global warming to 1.5°C: " time; in_clock_time = 1; next }
           /<!-- \/clock-time -->/ { print $0; in_clock_time = 0; next }
           /<!-- clock-news -->/ { print $0; print news; in_clock_news = 1; next }
           /<!-- \/clock-news -->/ { print $0; in_clock_news = 0; next }
@@ -55,7 +46,7 @@ jobs:
     - name: Commit and push changes
       uses: EndBug/add-and-commit@v7
       with:
-        message: "Update README with latest Climate Clock data"
+        message: "Update README"
         add: "profile/README.md"
         author_name: "GitHub Actions"
         author_email: "github-actions@github.com"
