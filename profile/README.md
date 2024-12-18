@@ -8,7 +8,7 @@ The terms “browsing” the web and “browser” share an origin in herbivory,
 
 ## Climate Clock
 <!-- clock-time -->
-Time left to limit global warming to 1.5°C • 4 years, 7 months, 27 days
+Time left to limit global warming to 1.5°C • 4 years, 7 months, 26 days
 <!-- /clock-time -->
 
 ## Climate News
