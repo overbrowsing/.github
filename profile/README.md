@@ -1,4 +1,4 @@
-# Every Byte Counts
+# Overbrowsing
 
 Overbrowsing is an applied research group focused on advancing sustainable web practices. Established as part of doctoral research at The University of Edinburgh’s Department of [Design Informatics](https://www.designinformatics.org), we blend inquiry with action to develop research-driven solutions that reduce environmental impact, enhance accessibility, and align technological potential with environmental stewardship.
 
