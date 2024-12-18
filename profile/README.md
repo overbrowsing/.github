@@ -4,6 +4,8 @@ Overbrowsing is an applied research group focused on advancing sustainable web p
 
 The terms “browsing” the web and “browser” share an origin in herbivory, where herbivores feed on vegetation. In nature, “overbrowsing” occurs when overconsumption and overpopulation exert extreme pressure on the environment. This shared origin parallels the unsustainable excesses of the web, aligning with the group’s mission.
 
+Every byte counts.
+
 ---
 
 ## Climate Clock
