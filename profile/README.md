@@ -12,15 +12,15 @@ The term ‘browsing’ originates from herbivores grazing, Similarly, ‘[overb
 
 ## Climate Clock
 <!-- clock-time -->
-Time left to limit global warming to 1.5°C • 4 years, 7 months, 28 days
+Time left to limit global warming to 1.5°C • 4 years, 7 months, 27 days
 <!-- /clock-time -->
 
 ## Climate News
 Stories from around the globe, highlighting the ongoing challenges and solutions in the fight to protect the planet.
 <!-- clock-news -->
-- [China seeks feedback on draft guidelines to measure steel sector emissions • Reuters](https://www.reuters.com/world/china/china-solicits-public-feedback-guidelines-steel-sector-greenhouse-gas-emissions-2024-12-06/ )
-- [World Bank ventures into debt swaps with Ivory Coast education deal • Reuters](https://www.reuters.com/world/africa/world-bank-ventures-into-debt-swaps-with-ivory-coast-education-deal-2024-12-05/ )
-- [Greenland’s peregrine falcons are a story of resilience in a changing Arctic • The Daily Climate](https://www.dailyclimate.org/greenlands-peregrine-falcons-resilience-2670306087.html   )
-- [Federal funding injects $50M into Great Salt Lake recovery • The Daily Climate](https://www.theguardian.com/environment/2024/dec/04/carrboro-north-carolina-duke-energy-lawsuit )
-- [Small North Carolina town sues Duke Energy in historic climate action • The Guardian](https://www.theguardian.com/environment/2024/dec/04/carrboro-north-carolina-duke-energy-lawsuit )
+- [UK government publishes major action plan to decarbonize grid by 2030 • Great Yarmouth Mercury](https://www.greatyarmouthmercury.co.uk/news/national/24791806.government-publishes-major-action-plan-decarbonise-grid-2030/ )
+- [EPA grants $135m to California for electric school buses & trucks • Los Angeles Times](https://www.latimes.com/environment/story/2024-12-12/epa-grants-135-million-to-california-for-electric-school-buses-and-trucks )
+- [El Hierro Island’s pioneering efforts to be self-suficient using renewable energy • The Daily Climate](https://www.dailyclimate.org/el-hierro-s-pioneering-efforts-in-sustainability-2670441142.html )
+- [Pope Francis calls for new global accords on debt, military spending • Reuters](https://www.reuters.com/world/europe/pope-francis-calls-new-global-accords-debt-military-spending-2024-12-12/ )
+- [Canada sets new 45–50% emissions reduction goal for 2035 • Reuters](https://www.reuters.com/sustainability/climate-energy/canada-sets-new-4550-emissions-reduction-goal-2035-2024-12-12/ )
 <!-- /clock-news -->
