@@ -5,7 +5,7 @@ Overbrowsing is an applied research group focused on advancing sustainable web p
 The terms “browsing” the web and “browser” share an origin in herbivory, where herbivores feed on vegetation. In nature, “overbrowsing” occurs when overconsumption and overpopulation exert extreme pressure on the environment. This shared origin parallels the unsustainable excesses of the web, aligning with the group’s mission.
 
 <!-- clock-time -->
-We have 4 years, 7 months, 26 days and counting to limit global warming to 1.5°C.
+Time left to limit global warming to 1.5°C • 4 years, 7 months, 25 days
 <!-- /clock-time -->
 
 ## Climate News
