@@ -1,6 +1,6 @@
 # Overbrowsing
 
-Overbrowsing is an applied research group focused on advancing sustainable web practices. Established as part of doctoral research at The University of Edinburgh’s Department of [Design Informatics](https://www.designinformatics.org), we blend inquiry with action to develop research-driven solutions that reduce environmental impact, enhance accessibility, and align technological potential with environmental stewardship.
+Overbrowsing is an applied research group focused on advancing sustainable web practices. Established as part of doctoral research at The University of Edinburgh’s Design Informatics Department, we blend inquiry with action to develop research-driven solutions that reduce environmental impact, enhance accessibility, and align technological potential with environmental stewardship.
 
 The term “browsing” originates from herbivores feeding on plants, and similarly, “overbrowsing” in nature happens when consumption exceeds what the environment can handle. This shared origin parallels the unsustainable excesses of the web, aligning with the group’s mission.
 
