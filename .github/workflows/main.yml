@@ -36,7 +36,12 @@ jobs:
 
         awk -v time="$time_left_formatted" -v news="$top_news" '
           BEGIN { in_clock_time = 0; in_clock_news = 0 }
-          /<!-- clock-time -->/ { print $0; print "We have just " time; in_clock_time = 1; next "—and counting—to limit global warming to 1.5°C. Every byte counts."}
+          /<!-- clock-time -->/ {
+            print $0
+            print "We have just " time "—and counting—to limit global warming to 1.5°C. Every byte counts."
+            in_clock_time = 1
+            next
+          }
           /<!-- \/clock-time -->/ { print $0; in_clock_time = 0; next }
           /<!-- clock-news -->/ { print $0; print news; in_clock_news = 1; next }
           /<!-- \/clock-news -->/ { print $0; in_clock_news = 0; next }
