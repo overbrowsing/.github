@@ -9,7 +9,6 @@ We have just 4 years, 7 months, 25 days—and counting—to limit global warming
 <!-- /clock-time -->
 
 ## Climate News
-Stories from around the globe, highlighting the ongoing challenges and solutions in the fight to protect the planet.
 <!-- clock-news -->
 - [UK government publishes major action plan to decarbonize grid by 2030 • Great Yarmouth Mercury](https://www.greatyarmouthmercury.co.uk/news/national/24791806.government-publishes-major-action-plan-decarbonise-grid-2030/ )
 - [EPA grants $135m to California for electric school buses & trucks • Los Angeles Times](https://www.latimes.com/environment/story/2024-12-12/epa-grants-135-million-to-california-for-electric-school-buses-and-trucks )
