@@ -1,6 +1,4 @@
-![Academic](https://img.shields.io/badge/Academia-fff?style=for-the-badge&logo=academia&logoColor=black)
-
-# Overbrowsing
+# Overbrowsing Research Group
 
 Overbrowsing is an applied research group focused on advancing sustainable web practices. Established as part of doctoral research at The University of Edinburgh’s Design Informatics Department, we blend inquiry with action to develop research-driven solutions that reduce environmental impact, enhance accessibility, and align technological potential with environmental stewardship.
 
