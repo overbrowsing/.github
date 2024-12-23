@@ -38,7 +38,7 @@ jobs:
           BEGIN { in_clock_time = 0; in_clock_news = 0 }
           /<!-- clock-time -->/ {
             print $0
-            print "We have just " time "—and counting—to limit global warming to 1.5°C. Every byte counts."
+            print "We have just "time" to limit global warming to 1.5°C."
             in_clock_time = 1
             next
           }
