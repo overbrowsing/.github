@@ -10,9 +10,9 @@ We have just 4 years, 7 months, 21 days to limit global warming to 1.5°C.
 
 ## Climate News
 <!-- clock-news -->
-- [UK government publishes major action plan to decarbonize grid by 2030 • Great Yarmouth Mercury](https://www.greatyarmouthmercury.co.uk/news/national/24791806.government-publishes-major-action-plan-decarbonise-grid-2030/ )
-- [EPA grants $135m to California for electric school buses & trucks • Los Angeles Times](https://www.latimes.com/environment/story/2024-12-12/epa-grants-135-million-to-california-for-electric-school-buses-and-trucks )
-- [El Hierro Island’s pioneering efforts to be self-suficient using renewable energy • The Daily Climate](https://www.dailyclimate.org/el-hierro-s-pioneering-efforts-in-sustainability-2670441142.html )
-- [Pope Francis calls for new global accords on debt, military spending • Reuters](https://www.reuters.com/world/europe/pope-francis-calls-new-global-accords-debt-military-spending-2024-12-12/ )
-- [Canada sets new 45–50% emissions reduction goal for 2035 • Reuters](https://www.reuters.com/sustainability/climate-energy/canada-sets-new-4550-emissions-reduction-goal-2035-2024-12-12/ )
+- [Brazil’s Lula approves 13 Indigenous lands, promises more to come • Mongabay](https://news.mongabay.com/2024/12/brazils-lula-approves-13-indigenous-lands-after-much-delay-promises-more-to-come/ )
+- [Brazil’s big push for tropical forest funding gets support for 2025 debut • Mongabay](https://news.mongabay.com/2024/12/brazils-big-push-for-tropical-forest-funding-gets-support-for-2025-debut/ )
+- [Montana top court upholds landmark youth climate ruling • BBC](https://www.bbc.com/news/articles/c36ek09depro )
+- [Black communities forge a path to climate resilience • The Daily Climate](https://www.dailyclimate.org/black-communities-climate-resilience-2670496569.html )
+- [Energy firms to spend £77bn to rewire Great Britain’s electricity grid • The Guardian](https://www.theguardian.com/business/2024/dec/18/energy-firms-rewire-great-britain-electricity-grid )
 <!-- /clock-news -->
