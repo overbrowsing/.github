@@ -5,14 +5,14 @@ Overbrowsing is an applied research group focused on advancing sustainable web p
 The term “browsing” originates from herbivores feeding, and similarly, “overbrowsing” in nature occurs when consumption exceeds the capacity of environmental resources. This shared origin parallels the unsustainable excesses of the web, aligning with the group’s mission.
 
 <!-- clock-time -->
-We have just 4 years, 5 months, 17 days to limit global warming to 1.5°C.
+We have just 4 years, 5 months, 16 days to limit global warming to 1.5°C.
 <!-- /clock-time -->
 
 ## Climate News
 <!-- clock-news -->
-- [Biden moves to protect more of Alaska refuge from drilling  • Reuters](https://www.reuters.com/world/us/biden-administration-moves-protect-more-alaska-refuge-drilling-2025-01-16/ )
-- [Ogoni women restore mangroves & livelihoods in Niger Delta • Mongabay](https://news.mongabay.com/2025/01/ogoni-women-restore-mangroves-and-livelihoods-in-oil-rich-niger-delta/ )
-- [Spanish airports will be carbon neutral in 2026 • Reuters](https://www.reuters.com/business/aerospace-defense/spanish-airports-will-be-carbon-neutral-2026-aena-ceo-says-2025-01-15/ )
-- [Nepal’s top court strikes down law allowing development in protected areas • Mongabay](https://news.mongabay.com/2025/01/nepals-top-court-strikes-down-law-allowing-development-in-protected-areas/ )
-- [Krahô women lead Indigenous guard to protect territory in Brazil • Mongabay](https://news.mongabay.com/2025/01/kraho-women-lead-surveillance-actions-to-protect-territory-in-brazil/ )
+- [Auditors get tougher guidelines on judging firms' environmental claims • Reuters](https://www.reuters.com/sustainability/auditors-get-tougher-guidelines-judging-firms-environmental-claims-2025-01-27/ )
+- [COP30 in Brazil set to spotlight developing countries' climate finance needs • Reuters](https://www.reuters.com/business/environment/cop30-brazil-set-spotlight-developing-countries-climate-finance-needs-2025-01-23/ )
+- [UK government overturns Tory measure and bans emergency use of bee-killing pesticide • The Guardian](https://www.theguardian.com/environment/2025/jan/23/government-decision-not-to-authorise-pesticide-is-sweet-as-honey-for-pollinators )
+- [In Uganda, a women-led reforestation initiative fights flooding & erosion • Mongabay](https://news.mongabay.com/2025/01/in-uganda-a-women-led-reforestation-initiative-fights-flooding-erosion/ )
+- [Scientists are tracking global wildlife’s contributions to humanity • Mongabay](https://news.mongabay.com/2025/01/scientists-are-tracking-global-wildlifes-contributions-to-humanity/ )
 <!-- /clock-news -->
