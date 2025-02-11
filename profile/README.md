@@ -5,14 +5,14 @@ Overbrowsing is an applied research group focused on advancing sustainable web p
 The term “browsing” originates from herbivores feeding, and similarly, “overbrowsing” in nature occurs when consumption exceeds the capacity of environmental resources. This shared origin parallels the unsustainable excesses of the web, aligning with the group’s mission.
 
 <!-- clock-time -->
-We have just 4 years, 5 months, 3 days to limit global warming to 1.5°C.
+We have just 4 years, 5 months, 2 days to limit global warming to 1.5°C.
 <!-- /clock-time -->
 
 ## Climate News
 <!-- clock-news -->
-- [Native trees, local wildlife thrive under Philippine tribes’ rainforestation • Mongabay](https://news.mongabay.com/short-article/2025/01/native-trees-local-wildlife-thrive-under-philippine-tribes-rainforestation/ )
-- [States step up climate action as Trump rolls back policies • The Daily Climate](https://www.dailyclimate.org/states-step-up-climate-action-as-trump-rolls-back-policies-2671041164.html )
-- [New Zealand targets cutting emissions by 51% to 55% by 2035 • Reuters](https://www.reuters.com/world/asia-pacific/new-zealand-targets-cutting-emissions-by-51-55-by-2035-2025-01-30/ )
-- [Reimagining office spaces as urban farms could solve food & real estate crises • The Daily Climate](https://www.dailyclimate.org/reimagining-office-spaces-as-urban-farms-could-solve-food-and-real-estate-crises-2671039823.html )
-- [Rosebank oilfield approval ruled unlawful • Big Issue](https://www.bigissue.com/news/environment/rosebank-oilfield-drilling-legal-challenge-climate/ )
+- [Colorado and Connecticut saved residents hundreds of thousands of dollars on their utility bills • Grist](https://grist.org/accountability/colorado-and-connecticut-saved-residents-hundreds-of-thousands-of-dollars-on-their-utility-bills/ )
+- [Brazil to push social diversity as criteria for sustainable investments at COP30 • Reuters](https://www.reuters.com/world/americas/brazil-push-social-diversity-criteria-sustainable-investments-cop30-2025-02-06/)
+- [Report says clean energy costs to continue to fall this year • Reuters](https://www.reuters.com/sustainability/clean-energy-costs-continue-fall-this-year-report-says-2025-02-06/ )
+- [UK unveils £100M seed fund to spur sustainable development and private investment • Sustainable Times](https://www.sustainabletimes.co.uk/post/uk-unveils-100m-seed-fund-to-spur-sustainable-development-and-private-investment )
+- [Climate victories are happening even if they don’t make the headlines • The Daily Climate](https://www.dailyclimate.org/climate-victories-are-happening-even-if-they-dont-make-the-headlines-2671099935.html )
 <!-- /clock-news -->
