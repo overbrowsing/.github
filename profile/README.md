@@ -5,14 +5,14 @@ Overbrowsing is an applied research group focused on advancing sustainable web p
 The term “browsing” originates from herbivores feeding, and similarly, “overbrowsing” in nature occurs when consumption exceeds the capacity of environmental resources. This shared origin parallels the unsustainable excesses of the web, aligning with the group’s mission.
 
 <!-- clock-time -->
-We have just 4 years, 4 months, 19 days to limit global warming to 1.5°C.
+We have just 4 years, 4 months, 18 days to limit global warming to 1.5°C.
 <!-- /clock-time -->
 
 ## Climate News
 <!-- clock-news -->
-- [Brazil targets illegal logging in major Amazon raids • Reuters](https://www.reuters.com/world/americas/brazil-targets-illegal-logging-major-amazon-raids-2025-02-17/ )
-- [2 South American scientists win environmental Nobel • Mongabay](https://news.mongabay.com/short-article/2025/02/two-south-american-scientists-win-environmental-nobel/ )
-- [13 more oil & gas licences could be cancelled after Rosebank court ruling • The Guardian](https://www.theguardian.com/business/2025/feb/13/thirteen-more-oil-and-gas-licences-could-be-cancelled-after-rosebank-court-ruling )
-- [Solar panels could cut fuel-poor UK families’ energy bills by 24% • The Guardian](https://www.theguardian.com/environment/2025/feb/13/solar-panels-could-cut-energy-bills-by-quarter-fuel-poor-uk-families-study )
-- [A strong carbon tax on shipping can give hope to climate-vulnerable communities • Climate Home News](https://www.climatechangenews.com/2025/02/13/a-strong-carbon-tax-on-shipping-can-give-hope-to-climate-vulnerable-communities/ )
+- [UK soil breakthrough could cut farm fertilizer use & advance sustainable agriculture • The Guardian](https://www.theguardian.com/environment/2025/feb/22/uk-soil-breakthrough-could-cut-farm-fertiliser-use-and-advance-sustainable-agriculture )
+- [China to promote innovation in ecology and environment sector • China Daily](https://www.chinadaily.com.cn/a/202502/21/WS67b7dc97a310c240449d67dc.html )
+- [Great lakes fisheries are creatively minimizing waste • Reasons to be cheerful ](https://reasonstobecheerful.world/great-lakes-fisheries-minimizing-waste/ )
+- [Green Climate Fund approves $687 million in investments • Reuters](https://www.reuters.com/sustainability/sustainable-finance-reporting/green-climate-fund-approves-687-million-investments-2025-02-21/ )
+- [Texas power system set for new clean milestone as winds pick up • Reuters](https://www.reuters.com/markets/commodities/texas-power-system-set-new-clean-milestone-winds-pick-up-maguire-2025-02-20/ )
 <!-- /clock-news -->
