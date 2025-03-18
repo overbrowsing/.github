@@ -5,14 +5,14 @@ Overbrowsing is an applied research group focused on advancing sustainable web p
 The term “browsing” originates from herbivores feeding, and similarly, “overbrowsing” in nature occurs when consumption exceeds the capacity of environmental resources. This shared origin parallels the unsustainable excesses of the web, aligning with the group’s mission.
 
 <!-- clock-time -->
-We have just 4 years, 4 months, 28 days to limit global warming to 1.5°C.
+We have just 4 years, 4 months, 27 days to limit global warming to 1.5°C.
 <!-- /clock-time -->
 
 ## Climate News
 <!-- clock-news -->
-- [Twelve women bringing light to the fight against climate change • Reuters](https://www.reuters.com/sustainability/society-equity/twelve-women-bringing-light-fight-against-climate-change-2025-03-07/ )
-- [Biochar might be an even bigger climate solution than we thought • The Daily Climate](https://www.dailyclimate.org/biochar-might-be-an-even-bigger-climate-solution-than-we-thought-2671282532.html )
-- [Texas leads US renewable energy generation by a country mile • Inside Climate News](https://insideclimatenews.org/news/06032025/inside-clean-energy-texas-leads-renewable-generation/ )
-- [Basel’s green roof revolution is creating a thriving urban ecosystem • The Daily Climate](https://www.dailyclimate.org/basels-green-roof-revolution-is-creating-a-thriving-urban-ecosystem-2671282519.html)
-- [Brownfield site to be turned into nature reserve • BBC](https://www.bbc.com/news/articles/cgj58035l0po )
+- [Peruvian farmer takes Germany's RWE to court in landmark climate case • Reuters](https://www.reuters.com/sustainability/peruvian-farmer-takes-german-energy-giant-rwe-court-landmark-climate-case-2025-03-16/ )
+- [German emissions fell 3.4% in 2024, on track for 2030 climate goals • Reuters](https://www.reuters.com/sustainability/sustainable-finance-reporting/ireland-donates-16-million-brazils-amazon-fund-2025-03-12/ )
+- [London’s pollution drops after expansion of clean air toll • The Daily Climate](https://www.dailyclimate.org/londons-pollution-drops-after-expansion-of-clean-air-toll-2671327331.html )
+- [China unveils plan to boost green equipment manufacturing • Xinhua](https://english.news.cn/20250312/726a0fcc5a164c928108347ce4240fed/c.html )
+- [Ireland donates $16 million to Brazil's Amazon Fund • Reuters](https://www.reuters.com/sustainability/sustainable-finance-reporting/ireland-donates-16-million-brazils-amazon-fund-2025-03-12/ )
 <!-- /clock-news -->
