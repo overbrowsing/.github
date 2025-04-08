@@ -5,14 +5,14 @@ Overbrowsing is an applied research group focused on advancing sustainable web p
 The term “browsing” originates from herbivores feeding, and similarly, “overbrowsing” in nature occurs when consumption exceeds the capacity of environmental resources. This shared origin parallels the unsustainable excesses of the web, aligning with the group’s mission.
 
 <!-- clock-time -->
-We have just 4 years, 3 months, 7 days to limit global warming to 1.5°C.
+We have just 4 years, 3 months, 6 days to limit global warming to 1.5°C.
 <!-- /clock-time -->
 
 ## Climate News
 <!-- clock-news -->
-- [Finland's last active coal-fired power and heat plant shuts down • Reuters](https://www.reuters.com/business/energy/finlands-last-active-coal-fired-power-heat-plant-shuts-down-2025-04-01/ )
-- [Repairing peats could prevent Glasgow's tap water turning brown • BBC](https://www.bbc.com/news/articles/c871nq9j7d8o)
-- [Community-based conservation cuts thresher shark fishing by 91% in Indonesia • Mongabay](https://news.mongabay.com/2025/03/community-based-conservation-cuts-thresher-shark-fishing-by-91-in-indonesia-study/ )
-- [Colombia creates landmark territory to protect uncontacted Indigenous groups • Mongabay](https://news.mongabay.com/2025/03/colombia-creates-landmark-territory-to-protect-uncontacted-indigenous-groups/ )
-- [Britain’s GHG fell 4% in 2024, government data shows • Reuters](https://www.reuters.com/sustainability/climate-energy/britains-greenhouse-gas-emissions-fell-4-2024-government-data-shows-2025-03-27/ )
+- [World’s largest wildlife crossing takes shape in Los Angeles • The Guardian](https://www.theguardian.com/us-news/2025/apr/06/la-wildlife-freeway-crossing )
+- [England’s urban and rural trees mapped for first time • The Guardian](https://www.theguardian.com/global-development/2025/apr/04/nepal-kathmandu-health-air-pollution-who-transport-electric-vehicles- )
+- [Drive for electric vehicles is cleaning up Nepal • The Guardian](https://www.theguardian.com/global-development/2025/apr/04/nepal-kathmandu-health-air-pollution-who-transport-electric-vehicles- )
+- [How solar is helping African farmers beat drought and diesel • The Daily Climate](https://www.theguardian.com/global-development/2025/apr/04/nepal-kathmandu-health-air-pollution-who-transport-electric-vehicles- )
+- [Lawyers turn to pro bono work to drive climate solutions beyond the courtroom • The Daily Climate](https://www.dailyclimate.org/lawyers-turn-to-pro-bono-work-to-drive-climate-solutions-beyond-the-courtroom-2671673844.html )
 <!-- /clock-news -->
