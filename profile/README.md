@@ -5,14 +5,14 @@ Overbrowsing is an applied research group focused on advancing sustainable web p
 The term “browsing” originates from herbivores feeding, and similarly, “overbrowsing” in nature occurs when consumption exceeds the capacity of environmental resources. This shared origin parallels the unsustainable excesses of the web, aligning with the group’s mission.
 
 <!-- clock-time -->
-We have just 4 years, 3 months, 23 days to limit global warming to 1.5°C.
+We have just 4 years, 3 months, 22 days to limit global warming to 1.5°C.
 <!-- /clock-time -->
 
 ## Climate News
 <!-- clock-news -->
-- [Nature protection is part of fundamental law in Amazon countries • Mongabay](https://news.mongabay.com/2025/04/nature-protection-is-part-of-fundamental-law-in-amazon-countries/ )
-- [One lawyer's groundbreaking work in shaping climate law • The Daily Climate](https://www.dailyclimate.org/one-lawyer-s-groundbreaking-work-in-shaping-climate-law-2671751383.html )
-- [California tribes rekindle ancient fire traditions to heal the land & themselves • The Daily Climate](https://www.dailyclimate.org/california-tribes-rekindle-ancient-fire-traditions-to-heal-the-land-and-themselves-2671751143.html )
-- [EU expects to add record renewable capacity in 2025 • Reuters](https://www.reuters.com/sustainability/boards-policy-regulation/eu-expects-add-record-renewable-capacity-2025-industry-sees-headwinds-2025-04-10/ )
-- [Lego opens solar-powered Vietnam factory to cut emissions & supply Asia • The Daily Climate](https://www.dailyclimate.org/lego-opens-solar-powered-vietnam-factory-to-cut-emissions-and-supply-asia-2671737123.html )
+- [Grassroots activists who took on corruption & corporate power share 2025 Goldman prize • The Guardian](https://www.theguardian.com/environment/2025/apr/21/goldman-environmental-prize-recognises-activists-fighting-corporate-power-and-political-corruption )
+- [EVs set to save Europe 20 million tons of CO2 this year  • Euronews](https://www.euronews.com/green/2025/03/20/evs-set-to-save-europe-20-million-tonnes-of-co2-this-year-but-transport-remains-biggest-po#:~:text=One%20in%20five%20new%20cars,How%20did%20we%20get%20here%3F&text=A%20surge%20in%20the%20uptake,Transport%20%26%20Environment%20(T%26E). )
+- [Research shows climate protests are shaping politics  • The Daily Climate](https://www.dailyclimate.org/climate-protests-may-shape-politics-more-than-you-think-2671800334.html )
+- [Scientists generate electricity from falling droplets • Euronews](https://www.euronews.com/green/2025/04/17/clean-energy-from-rain-scientists-generate-electricity-from-falling-droplets )
+- [Futuristic ferries rise above the waves to offer faster & cleaner commutes • The Daily Climate](https://www.dailyclimate.org/futuristic-ferries-rise-above-the-waves-to-offer-faster-cleaner-commutes-2671789778.html )
 <!-- /clock-news -->
