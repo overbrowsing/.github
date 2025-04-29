@@ -3,14 +3,14 @@
 Overbrowsing is an applied research group focused on advancing sustainable web practices. Established as part of doctoral research at The University of Edinburgh's Institute for Design Informatics, we blend inquiry with action to develop research-driven solutions that reduce the environmental impact of the internet and improve accessibility, aligning technological potential with environmental stewardship.
 
 <!-- clock-time -->
-We have just 4 years, 2 months, 16 days to limit global warming to 1.5°C.
+We have just 4 years, 2 months, 15 days to limit global warming to 1.5°C.
 <!-- /clock-time -->
 
 ## Climate News
 <!-- clock-news -->
-- [Grassroots activists who took on corruption & corporate power share 2025 Goldman prize • The Guardian](https://www.theguardian.com/environment/2025/apr/21/goldman-environmental-prize-recognises-activists-fighting-corporate-power-and-political-corruption )
-- [EVs set to save Europe 20 million tons of CO2 this year  • Euronews](https://www.euronews.com/green/2025/03/20/evs-set-to-save-europe-20-million-tonnes-of-co2-this-year-but-transport-remains-biggest-po#:~:text=One%20in%20five%20new%20cars,How%20did%20we%20get%20here%3F&text=A%20surge%20in%20the%20uptake,Transport%20%26%20Environment%20(T%26E). )
-- [Research shows climate protests are shaping politics  • The Daily Climate](https://www.dailyclimate.org/climate-protests-may-shape-politics-more-than-you-think-2671800334.html )
-- [Scientists generate electricity from falling droplets • Euronews](https://www.euronews.com/green/2025/04/17/clean-energy-from-rain-scientists-generate-electricity-from-falling-droplets )
-- [Futuristic ferries rise above the waves to offer faster & cleaner commutes • The Daily Climate](https://www.dailyclimate.org/futuristic-ferries-rise-above-the-waves-to-offer-faster-cleaner-commutes-2671789778.html )
+- [Dutch court holds landmark ruling on fossil fuel ads ban • Euronews](https://www.euronews.com/green/2025/04/28/landmark-ruling-should-encourage-more-cities-to-ban-fossil-fuel-ads-campaigners-urge )
+- [Revive Our Ocean initiative launched to protect coastal waters • Reuters](https://www.reuters.com/sustainability/climate-energy/revive-our-ocean-initiative-launched-protect-coastal-waters-2025-04-24/ )
+- [China's wind & solar energy capacity surpasses thermal power for first time • Xinhua](https://english.news.cn/20250425/8822d06f83004f20b178c559e43941ad/c.html )
+- [Japan's GHG emissions fall 4% in fiscal year 2023-2024 to record low • Reuters](https://www.reuters.com/sustainability/climate-energy/japans-greenhouse-gas-emissions-fall-4-fy2324-record-low-2025-04-25/ )
+- [US states ramp up efforts to make fossil fuel giants pay for climate damages • The Daily Climate](https://www.dailyclimate.org/states-ramp-up-efforts-to-make-fossil-fuel-giants-pay-for-climate-damages-2671843465.html )
 <!-- /clock-news -->
