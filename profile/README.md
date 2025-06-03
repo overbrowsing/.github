@@ -3,14 +3,14 @@
 Overbrowsing is an applied research group focused on advancing sustainable web practices. Established as part of doctoral research at The University of Edinburgh's Institute for Design Informatics, we blend inquiry with action to develop research-driven solutions that reduce the environmental impact of the internet and improve accessibility, aligning technological potential with environmental stewardship.
 
 <!-- clock-time -->
-We have just 4 years, 1 months, 11 days to limit global warming to 1.5°C.
+We have just 4 years, 1 months, 10 days to limit global warming to 1.5°C.
 <!-- /clock-time -->
 
 ## Climate News
 <!-- clock-news -->
-- [Satellites for Biodiversity upgrades with new projects & launches insight hub • Mongabay](https://news.mongabay.com/short-article/2025/05/satellites-for-biodiversity-upgrades-with-new-projects-and-launches-insight-hub/ )
-- [Urban forests in Niger’s schoolyards serve climate resilience and education • Mongabay](https://news.mongabay.com/2025/05/urban-forests-in-nigers-schoolyards-serve-climate-resilience-and-education/ )
-- [Solar apprenticeships give Virginia students a head start on clean energy • Grist](https://grist.org/business/solar-apprenticeships-give-virginia-students-a-head-start-on-clean-energy/ )
-- [Scientists seek to save Florida’s dying reefs with hardy nursery-grown coral • Mongabay](https://www.theguardian.com/us-news/2025/may/24/florida-coral-replanting-effort )
-- [In Panama, an Indigenous-led project rewrites the rules of reforestation • Mongabay](https://news.mongabay.com/2025/05/in-panama-an-indigenous-led-project-rewrites-the-rules-of-reforestation/ )
+- [Chile president to ramp up decarbonization, pressure on Israel as term winds down • Reuters](https://www.reuters.com/sustainability/climate-energy/chile-president-ramp-up-decarbonization-pressure-israel-term-winds-down-2025-06-01/)
+- [Hawaii makes history as 1st state to charge tourists to save environment • Grist](https://grist.org/politics/hawai%ca%bbi-makes-history-as-first-state-to-charge-tourists-to-save-environment/ )
+- [US Mayors lead climate fight with practical solutions as federal support wanes • The Daily Climate](https://www.dailyclimate.org/mayors-lead-climate-fight-with-practical-solutions-as-federal-support-wanes-2672234234.html )
+- [Climate action could save half of world's vanishing glaciers • France 24](https://www.france24.com/en/live-news/20250529-climate-action-could-save-half-of-world-s-vanishing-glaciers-says-study )
+- [Pacific Islanders are fighting to protect the ocean • Reuters](https://www.reuters.com/sustainability/society-equity/pacific-islanders-are-fighting-protect-ocean-now-world-must-too-2025-05-29/ )
 <!-- /clock-news -->
