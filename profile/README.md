@@ -3,7 +3,7 @@
 Overbrowsing is an applied research group focused on advancing sustainable web practices. Established as part of doctoral research at The University of Edinburgh's Institute for Design Informatics, we blend inquiry with action to develop research-driven solutions that reduce the environmental impact of the internet and improve accessibility, aligning technological potential with environmental stewardship.
 
 <!-- clock-time -->
-We have just 4 years, 1 months, 0 days to limit global warming to 1.5°C.
+We have just 4 years, 1 months, 29 days to limit global warming to 1.5°C.
 <!-- /clock-time -->
 
 ## Climate News
