@@ -3,14 +3,14 @@
 Overbrowsing is an applied research group focused on advancing sustainable web practices. Established as part of doctoral research at The University of Edinburgh's Institute for Design Informatics, we blend inquiry with action to develop research-driven solutions that reduce the environmental impact of the internet and improve accessibility, aligning technological potential with environmental stewardship.
 
 <!-- clock-time -->
-We have just 3 years, 12 months, 15 days to limit global warming to 1.5°C.
+We have just 3 years, 11 months, 14 days to limit global warming to 1.5°C.
 <!-- /clock-time -->
 
 ## Climate News
 <!-- clock-news -->
-- [Greece is creating 2 new national marine parks to meet 2030 ocean protection targets early • Euronews](https://www.euronews.com/green/2025/07/21/greece-is-creating-two-new-national-marine-parks-to-meet-2030-ocean-protection-targets-ear )
-- [Native American teens take kayak trip to celebrate return of salmon to dam-freed river • Euronews](https://www.euronews.com/green/2025/07/19/native-american-teens-take-long-awaited-kayak-trip-to-celebrate-return-of-salmon-to-dam-fr )
-- [Bangladesh turns to nature for biodegradable plates to replace plastic ones • Mongabay](https://news.mongabay.com/short-article/2025/07/bangladesh-turns-to-nature-for-biodegradable-plants-to-replace-plastic-ones/ )
-- [Conservationists raise sharks to restore reefs in waters around Thailand • Mongabay](https://news.mongabay.com/2025/07/conservationists-raise-sharks-to-restore-reefs-in-waters-around-thailand/ )
-- [World's oldest climate fund targets wildlife bonds for every country in Africa • Reuters](https://www.reuters.com/sustainability/cop/worlds-oldest-climate-fund-targets-wildlife-bonds-every-country-africa-2025-07-17/ )
+- [Indigenous women from Southeast Asia challenge extraction & erasure • Mongabay](https://news.mongabay.com/2025/07/across-southeast-asia-indigenous-women-challenge-extraction-and-erasure/ )
+- [Study shows technology & carbon taxes could cut 80% urban transport emissions • World Scientific Connect](https://www.worldscientific.com/doi/abs/10.1142/S2010007825400019 )
+- [US & Mexico reach agreement on reducing sewage flows across border & into San Diego • Reuters](https://www.reuters.com/sustainability/climate-energy/us-mexico-reach-agreement-reducing-sewage-flows-across-border-into-san-diego-2025-07-24/ )
+- [3 Michelin star Paris restaurant Arpege switches to plant-based dishes • Reuters](https://www.reuters.com/lifestyle/three-michelin-star-paris-restaurant-arpege-switches-plant-based-dishes-2025-07-25/ )
+- [Outdoor jobs help teens connect with nature and community • The Daily Climate](https://www.dailyclimate.org/outdoor-jobs-help-teens-connect-with-nature-and-community-2673754114.html )
 <!-- /clock-news -->
